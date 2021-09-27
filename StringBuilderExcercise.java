@@ -2,13 +2,13 @@
 public class StringBuilderExcercise {
 
 	public static void main(String[] args) {
-		String sequence = "";
+		StringBuilder sequence = new StringBuilder();
 		
 		for(int i = 0; i <10; i++) {
 			if (i % 2 == 0) {
-				sequence = sequence + i;
+				sequence = sequence.append(i);
 			} else {
-				sequence = i + sequence;
+				sequence = sequence.insert(0, i);
 			}
 		}
 		
